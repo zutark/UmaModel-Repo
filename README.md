@@ -1,33 +1,38 @@
 # UmaModel-Repo
 
-External model & animation content pack repository for the **UmaModel** Minecraft NeoForge (`1.21.1`) mod.
+External model & animation pack repository for **UmaModel** (Minecraft NeoForge `1.21.1`).
 
 > [!NOTE]
-> The **UmaModel** mod on Modrinth/CurseForge is a clean client-side PMX/VMD rendering engine with **no third-party character assets bundled inside the JAR**. All character models and motion packs live here as optional external packs.
+> The **UmaModel** mod on Modrinth is a clean PMX/VMD rendering engine with **no third-party character assets bundled inside the JAR**. All character models and motion packs live here separately.
 
 ---
 
 ## Quick Installation
 
-1. Download the latest **`umamodel-content-pack-*.zip`** from [**Releases**](https://github.com/zutark/UmaModel-Repo/releases).
-2. Launch Minecraft with **UmaModel** installed and open the mod menu (default key or `/umamodel`).
+1. Download the latest **`umamodel-content-pack-*.umapk`** from [**Releases**](https://github.com/zutark/UmaModel-Repo/releases).
+2. Install **UmaModel `0.1.1+`** (`NeoForge 1.21.1`), launch Minecraft, and open the mod menu (keybind or `/umamodel`).
 3. Click **`Packs Folder`** — this opens `.minecraft/config/umamodel/packs/`.
-4. Drop the downloaded `.zip` archive directly into `config/umamodel/packs/` (**no need to extract it**).
+4. Drop the downloaded `.umapk` file directly into `config/umamodel/packs/` (**do not extract or rename it**).
 5. Click **`Reload`** in the mod menu and pick your character & outfit style.
 
+### Multiplayer Note
+- Model packs are **strictly client-side** (`config/umamodel/packs/` on each player's PC) — **do not upload model packs to your dedicated server**.
+- Installing the clean **UmaModel** mod JAR on the server is **optional** (only needed if you want players to sync selected models, scale, and emotes with each other).
+
 ### Supported Pack Locations
-- **Recommended (Zip or Extracted Pack):** `.minecraft/config/umamodel/packs/`
+- **Recommended (`.umapk` / `.zip` / Extracted Pack):** `.minecraft/config/umamodel/packs/`
 - **Loose custom `.pmx` models:** `.minecraft/config/umamodel/models/` or `packs/`
 - **Loose custom `.vmd` animations:** `.minecraft/config/umamodel/vmd/` or `packs/`
 
 ---
 
-## Content Pack `v0.1.0` — What's Included
+## Content Pack `v0.1.1` — What's Included
 
-- **24 characters / 52 outfit styles** (`.pmx` + textures, lazy-loaded with GPU texture deduplication and LRU cache eviction)
+- **`.umapk` container packaging**: Assets are bundled into a `.umapk` pack file rather than distributed as loose raw files, to keep original **Cygames, Inc.** assets strictly for in-mod use and discourage casual re-uploads elsewhere.
+- **24 characters / 52 outfit styles** (`.pmx` + textures, lazy-loaded with texture deduplication and cache eviction)
 - **7 motion presets** (`.vmd`): `idle1`–`idle5`, `walk`, `run`
 - **Dynamic facial expressions & reactive ears/tails** per character personality
-- **Multiplayer sync compatible** — works seamlessly between users on the public engine build (with this pack) and the standalone build
+- **Multiplayer sync compatible** — works seamlessly between players who have matching packs locally
 
 <details>
 <summary>Full Character & Outfit List (24 characters, 52 styles)</summary>
@@ -63,16 +68,16 @@ External model & animation content pack repository for the **UmaModel** Minecraf
 
 ---
 
-## Pack Format (For Custom Packs)
+## Custom Packs
 
-You can drop any `.zip` / `.umapk` archive (or folder) into `config/umamodel/packs/`:
+You can also drop custom user-made `.zip` archives or folders into `config/umamodel/packs/`:
 - **Structured packs:** contain `models/catalog.json` (or `catalog.json`) and/or `vmd/index.json` (or `index.json`).
-- **Loose packs:** any `.pmx` and `.vmd` files inside a zip archive are automatically discovered along with nearby textures (`textures/`, `Texture2D/`, or relative paths).
+- **Loose packs:** any `.pmx` and `.vmd` files inside a `.zip` or folder are automatically discovered along with nearby textures (`textures/`, `Texture2D/`, or relative paths).
 
 ---
 
 ## Disclaimer & Rights
 
-This is an unofficial, non-commercial fan-made content repository.
+This is an unofficial, non-commercial fan-made content repository. We are **not affiliated with, endorsed by, or associated with Cygames, Inc.**
 All rights to **Umamusume: Pretty Derby**, its characters, designs, and original game assets belong to **Cygames, Inc.**
 If you are a rights holder and wish to request removal of any content, please open an issue in this repository and it will be removed promptly.
