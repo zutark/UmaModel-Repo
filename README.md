@@ -10,7 +10,7 @@ Fan-made **Umamusume: Pretty Derby** character model & motion pack repository fo
 
 - **Minecraft:** `1.21.1`
 - **Mod Loader:** `NeoForge`
-- **Mod Version:** **UmaModel `0.1.1+`** — download from [Modrinth](https://modrinth.com/mod/umamodel)
+- **Mod Version:** **UmaModel `0.1.2+`** — download from [Modrinth](https://modrinth.com/mod/umamodel)
 
 ---
 
