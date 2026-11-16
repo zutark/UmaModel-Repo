@@ -2,7 +2,7 @@
 
 Fan-made **Umamusume: Pretty Derby** character model & motion pack repository for the **[UmaModel](https://modrinth.com/mod/umamodel)** Minecraft NeoForge (`1.21.1`) mod, maintained by **@zutark**.
 
-> **Note:** Character models and animations are packaged as `.umapk` content packs so original `Cygames, Inc.` game assets remain safely packaged for in-mod use rather than loose raw files. The mod JAR itself contains no third-party assets.
+> **Note:** Character models and animations are packaged as `.umapk` content packs so original game assets remain safely packaged for in-mod use rather than loose raw files. The mod JAR itself contains no third-party assets.
 
 ---
 
@@ -43,4 +43,4 @@ Download the latest `.umapk` content pack from **[Releases](https://github.com/z
 
 ## Disclaimer
 
-This is an unofficial, non-commercial fan-made project. We are **not affiliated with, endorsed by, or associated with Cygames, Inc.** All rights to *Umamusume: Pretty Derby*, its characters, character designs, and original assets belong strictly to **Cygames, Inc.**
+This is an unofficial, non-commercial fan-made project. We are **not affiliated with, or associated with Cygames, Inc.** All rights to *Umamusume: Pretty Derby*, its characters, character designs, and original assets belong strictly to **Cygames, Inc.**
